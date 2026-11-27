@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,12 +8,12 @@
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
-     />  
-   <title>Home</title> 
+    />
+    <title>Home</title>
   </head>
   <body>
-    <header>
-      <div class="navbar lg:px-10 shadow-sm">
+    <header class="fixed w-full z-100 bg-white">
+      <div class="navbar lg:px-10 shadow-sm"> 
         <div class="navbar-start">
           <div class="dropdown">
             <div
@@ -42,11 +42,7 @@
               class="menu menu-sm dropdown-content font-medium bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a
-                  href="./index.html"
-                  class="bg-[#b95028] text-white"
-                  >Home</a
-                >
+                <a href="./index.html" class="bg-[#b95028] text-white">Home</a>
               </li>
               <li>
                 <a
@@ -59,19 +55,18 @@
                 <a
                   href="./public/pages/contact.html"
                   class="hover:bg-[#b95028] hover:text-white"
-                  >Help &amp; Support</a
-                >
+                  >Help &amp; Support</a>
               </li>
             </ul>
           </div>
           <img src="./public/images/logo.webp" class="w-30" />
         </div>
-        <div class="navbar-center hidden lg:flex ">
+        <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal flex gap-3 px-1">
             <li>
               <a
                 href="./index.html"
-                class="relative text-[#b95028] bg-[#fce2d2]  font-semibold w-full py-4  lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#b95028]  after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257]   transition-[1s]"
+                class="relative text-[#b95028] bg-[#fce2d2] font-semibold w-full py-4 lg:w-auto lg:pb-[1rem] lg:pt-[1rem] lg:after:bg-[#b95028] after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 hover:after:w-full after:duration-300 text-[#515257] transition-[1s]"
                 >Home</a
               >
             </li>
@@ -101,7 +96,9 @@
       </div>
     </header>
     <main>
-      <section class="px-10 lg:flex  pt-[5rem] pb-[3rem] bg-linear-to-b  from-[#fce2d2] to-[#ffffff] items-center justify-between">
+      <section
+        class="px-10 lg:flex pt-[10rem] pb-[3rem] bg-linear-to-b from-[#fce2d2] to-[#ffffff] items-center justify-between"
+      >
         <div class="flex flex-col gap-6 text-[#6b6059]">
           <p class="text-[#b95028] font-medium">
             Safety, Dignity &amp; Equality
@@ -122,60 +119,80 @@
             </button>
             <a
               type="button"
-              class="cursor-pointer border-2 border-[#b95028] text-[#b95028] rounded-full px-4 py-2 font-semibold hover:translate-y-[-0.3rem] transition duration-300 hover:bg-amber-950"
+             class="cursor-pointer border-2 border-[#b95028] text-[#b95028] rounded-full px-4 py-2 font-semibold hover:translate-y-[-0.3rem] transition duration-300 hover:text-white hover:bg-[#b95028]"
               href="./public/pages/contact.html"
               >Get Support</a
             >
           </div>
         </div>
-        
+
         <img
           src="./public/images/hero.image.webp"
-          class="lg:size-[30rem] max-sm:mt-5  rounded-2xl lg:w-[55%]"
+          class="lg:size-[30rem] max-sm:mt-5 rounded-2xl lg:w-[55%]"
         />
-        
       </section>
-      <section class="bg-[#f7ede5] text-[#6b6059] p-10 flex flex-col gap-10">
-          
-            <p class="text-[#b95028] font-medium">Why it matters</p>
-            <h2 class="text-5xl font-semibold max-w-2xl ">
-              The barriers are greater, and so are the risks.
-            </h2>
-            <div class="flex gap-5 max-sm:flex-col">
-              <div class="bg-[#ffffff] p-10 flex flex-col gap-4 rounded-3xl border-t-4 border-[#b95028]">
-                <span class="text-[#b95028] font-medium">01</span>
-                <h3 class="font-semibold text-2xl">Dependence on others</h3>
-                <p class="font-medium">
-                  Daily support can be misused to control movement, medication
-                  or money.
-                </p>
-              </div>
-              <div class="bg-[#ffffff] p-10 flex flex-col gap-4 rounded-3xl border-t-4 border-[#b95028]">
-                <span class="text-[#b95028] font-medium">02</span>
-                <h3 class="font-semibold text-2xl">Barriers to reporting</h3>
-                <p class="font-medium">
-                  Inaccessible services and fear of not being believed keep many
-                  silent.
-                </p>
-              </div>
-              <div class="bg-[#ffffff] p-10 flex flex-col gap-4 rounded-3xl border-t-4 border-[#b95028]">
-                <span class="text-[#b95028] font-medium">03</span>
-                <h3 class="font-semibold text-2xl">Isolation</h3>
-                <p class="font-medium">
-                  Limited contact and communication make abuse easier to hide.
-                </p>
-              </div>
-            </div>
-          
-        
+      <section class="bg-[#f7ede5] pb-20  text-[#6b6059] p-10 flex flex-col gap-10">
+        <p class="text-[#b95028] font-medium">Why it matters</p>
+        <h2 class="text-5xl font-semibold max-w-2xl">
+          The barriers are greater, and so are the risks.
+        </h2>
+        <div class="flex gap-5 max-sm:flex-col">
+          <div
+            class="bg-[#ffffff] p-10 flex flex-col gap-4 rounded-3xl border-t-4 border-[#b95028]"
+          >
+            <span class="text-[#b95028] font-medium">01</span>
+            <h3 class="font-semibold text-2xl">Dependence on others</h3>
+            <p class="font-medium">
+              Daily support can be misused to control movement, medication or
+              money.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffffff] p-10 flex flex-col gap-4 rounded-3xl border-t-4 border-[#b95028]"
+          >
+            <span class="text-[#b95028] font-medium">02</span>
+            <h3 class="font-semibold text-2xl">Barriers to reporting</h3>
+            <p class="font-medium">
+              Inaccessible services and fear of not being believed keep many
+              silent.
+            </p>
+          </div>
+          <div
+            class="bg-[#ffffff] p-10 flex flex-col gap-4 rounded-3xl border-t-4 border-[#b95028]"
+          >
+            <span class="text-[#b95028] font-medium">03</span>
+            <h3 class="font-semibold text-2xl">Isolation</h3>
+            <p class="font-medium">
+              Limited contact and communication make abuse easier to hide.
+            </p>
+          </div>
+        </div>
       </section>
-        
-       
+      <section class="section2">
+        <div class="first-child">
+         <h2
+          
+        >
+          <i>
+            "Her voice matters, in every language and by every means of
+            communication."</i>
+        </h2> 
+         <div class="buttons">
+            <button
+              class="cursor-pointer bg-[#b95028] text-white rounded-full px-4 py-2 font-semibold hover:translate-y-[-0.3rem] transition duration-300 hover:bg-amber-950"
+            >
+              Lern More
+            </button>
+            <a
+              type="button"
+             class="cursor-pointer border-2 border-[#b95028] text-[#b95028] rounded-full px-4 py-2 font-semibold hover:translate-y-[-0.3rem] transition duration-300 hover:text-white hover:bg-[#b95028]"
+              >Get Support</a
+            >
+          </div>
+        </div>
+      </section>
+      
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
-</html>  
- 
-              
-              
-              
+</html>

@@ -1,1 +1,53 @@
 @import "tailwindcss";
+.section2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/section1.webp) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    
+}
+.first-child{
+     position: absolute;       
+    font-weight: 600;         
+    z-index: 11;              
+    color: #f7e5d8;           
+    left: 2.5rem;             
+    top: 3.75rem;             
+    display: flex;            
+    flex-direction: column;   
+    gap: 0.8rem;
+    
+}
+.section2>.first-child>h2{
+    max-width: 30rem;
+  font-size: 3rem;
+}
+.buttons{
+     display: flex;
+     gap: 1rem;
+}
+@media (max-width: 480px) {
+    .section2 {
+        height: 50vh; 
+        padding: 1rem; 
+    }
+
+    .first-child {
+        left: 1rem;
+        top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .section2 > .first-child > h2 {
+        
+        font-size: 1.5rem; 
+        line-height: 1.3;
+    }
+
+    
+
+    
+}
+
