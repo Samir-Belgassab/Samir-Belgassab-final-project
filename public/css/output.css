@@ -674,6 +674,9 @@
     }
   }
   @media (width < 40rem) {
+    .max-sm\:mt-3 {
+      margin-top: calc(var(--spacing) * 3);
+    }
     .max-sm\:mt-5 {
       margin-top: calc(var(--spacing) * 5);
     }
@@ -781,6 +784,9 @@
     }
     .lg\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
+    }
+    .lg\:py-2 {
+      padding-block: calc(var(--spacing) * 2);
     }
     .lg\:pt-\[1rem\] {
       padding-top: 1rem;
