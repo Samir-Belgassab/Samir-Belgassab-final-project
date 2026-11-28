@@ -1,4 +1,12 @@
 @import "tailwindcss";
+
+
+@layer base {
+  body {
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
+
 .section2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/section1.webp) ;
     background-position: center;
